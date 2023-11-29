@@ -701,6 +701,8 @@
             attText.Name = "attText";
             attText.Size = new Size(49, 23);
             attText.TabIndex = 85;
+            attText.Text = "1";
+            attText.TextAlign = HorizontalAlignment.Center;
             attText.TextChanged += attText_TextChanged;
             // 
             // defText
@@ -709,6 +711,8 @@
             defText.Name = "defText";
             defText.Size = new Size(49, 23);
             defText.TabIndex = 86;
+            defText.Text = "1";
+            defText.TextAlign = HorizontalAlignment.Center;
             // 
             // menText
             // 
@@ -716,6 +720,8 @@
             menText.Name = "menText";
             menText.Size = new Size(49, 23);
             menText.TabIndex = 87;
+            menText.Text = "1";
+            menText.TextAlign = HorizontalAlignment.Center;
             // 
             // tacText
             // 
@@ -723,6 +729,8 @@
             tacText.Name = "tacText";
             tacText.Size = new Size(49, 23);
             tacText.TabIndex = 88;
+            tacText.Text = "1";
+            tacText.TextAlign = HorizontalAlignment.Center;
             // 
             // techText
             // 
@@ -730,6 +738,8 @@
             techText.Name = "techText";
             techText.Size = new Size(49, 23);
             techText.TabIndex = 89;
+            techText.Text = "1";
+            techText.TextAlign = HorizontalAlignment.Center;
             // 
             // fitText
             // 
@@ -737,6 +747,8 @@
             fitText.Name = "fitText";
             fitText.Size = new Size(49, 23);
             fitText.TabIndex = 90;
+            fitText.Text = "1";
+            fitText.TextAlign = HorizontalAlignment.Center;
             // 
             // setText
             // 
@@ -744,6 +756,8 @@
             setText.Name = "setText";
             setText.Size = new Size(49, 23);
             setText.TabIndex = 91;
+            setText.Text = "1";
+            setText.TextAlign = HorizontalAlignment.Center;
             // 
             // knowText
             // 
@@ -751,6 +765,8 @@
             knowText.Name = "knowText";
             knowText.Size = new Size(49, 23);
             knowText.TabIndex = 92;
+            knowText.Text = "1";
+            knowText.TextAlign = HorizontalAlignment.Center;
             // 
             // disText
             // 
@@ -758,6 +774,8 @@
             disText.Name = "disText";
             disText.Size = new Size(49, 23);
             disText.TabIndex = 93;
+            disText.Text = "1";
+            disText.TextAlign = HorizontalAlignment.Center;
             // 
             // handText
             // 
@@ -765,6 +783,8 @@
             handText.Name = "handText";
             handText.Size = new Size(49, 23);
             handText.TabIndex = 94;
+            handText.Text = "1";
+            handText.TextAlign = HorizontalAlignment.Center;
             // 
             // shotText
             // 
@@ -772,6 +792,8 @@
             shotText.Name = "shotText";
             shotText.Size = new Size(49, 23);
             shotText.TabIndex = 95;
+            shotText.Text = "1";
+            shotText.TextAlign = HorizontalAlignment.Center;
             // 
             // detText
             // 
@@ -779,6 +801,8 @@
             detText.Name = "detText";
             detText.Size = new Size(49, 23);
             detText.TabIndex = 96;
+            detText.Text = "1";
+            detText.TextAlign = HorizontalAlignment.Center;
             // 
             // levText
             // 
@@ -786,6 +810,8 @@
             levText.Name = "levText";
             levText.Size = new Size(49, 23);
             levText.TabIndex = 97;
+            levText.Text = "1";
+            levText.TextAlign = HorizontalAlignment.Center;
             // 
             // motText
             // 
@@ -793,11 +819,14 @@
             motText.Name = "motText";
             motText.Size = new Size(49, 23);
             motText.TabIndex = 98;
+            motText.Text = "1";
+            motText.TextAlign = HorizontalAlignment.Center;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.Control;
             ClientSize = new Size(764, 584);
             Controls.Add(motText);
             Controls.Add(levText);
