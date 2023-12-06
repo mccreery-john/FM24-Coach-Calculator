@@ -326,11 +326,210 @@ namespace FM24_Coach_Calculator
 
 
 
+        private void tacPlus_Click(object sender, EventArgs e)
+        {
+            addOrMinus(ref Coach.tactical, 0, 3);
+        }
+
+        private void tacMinus_Click(object sender, EventArgs e)
+        {
+            addOrMinus(ref Coach.tactical, 1, 3);
+        }
+
+        private void tacText_TextChanged(object sender, EventArgs e)
+        {
+            string textString = tacText.Text;
+            textChange(ref textString, ref Coach.tactical, 3);
+        }
 
 
 
 
+        private void techPlus_Click(object sender, EventArgs e)
+        {
+            addOrMinus(ref Coach.technical, 0, 4);
+        }
+
+        private void techMinus_Click(object sender, EventArgs e)
+        {
+            addOrMinus(ref Coach.technical, 1, 4);
+        }
+
+        private void techText_TextChanged(object sender, EventArgs e)
+        {
+            string textString = techText.Text;
+            textChange(ref textString, ref Coach.technical, 4);
+        }
 
 
+
+
+        private void fitPlus_Click(object sender, EventArgs e)
+        {
+            addOrMinus(ref Coach.fitness, 0, 5);
+        }
+
+        private void fitMinus_Click(object sender, EventArgs e)
+        {
+            addOrMinus(ref Coach.fitness, 1, 5);
+        }
+
+        private void fitText_TextChanged(object sender, EventArgs e)
+        {
+            string textString = fitText.Text;
+            textChange(ref textString, ref Coach.fitness, 5);
+        }
+
+
+
+
+        private void setPlus_Click(object sender, EventArgs e)
+        {
+            addOrMinus(ref Coach.setPieces, 0, 6);
+        }
+
+        private void setMinus_Click(object sender, EventArgs e)
+        {
+            addOrMinus(ref Coach.setPieces, 1, 6);
+        }
+
+        private void setText_TextChanged(object sender, EventArgs e)
+        {
+            string textString = setText.Text;
+            textChange(ref textString, ref Coach.setPieces, 6);
+        }
+
+
+
+
+        private void knowPlus_Click(object sender, EventArgs e)
+        {
+            addOrMinus(ref Coach.tactKnow, 0, 7);
+        }
+
+        private void knowMinus_Click(object sender, EventArgs e)
+        {
+            addOrMinus(ref Coach.tactKnow, 1, 7);
+        }
+
+        private void knowText_TextChanged(object sender, EventArgs e)
+        {
+            string textString = knowText.Text;
+            textChange(ref textString, ref Coach.tactKnow, 7);
+        }
+
+
+
+
+        private void disPlus_Click(object sender, EventArgs e)
+        {
+            addOrMinus(ref Coach.gkDistribution, 0, 8);
+        }
+
+        private void disMinus_Click(object sender, EventArgs e)
+        {
+            addOrMinus(ref Coach.gkDistribution, 1, 8);
+        }
+
+        private void disText_TextChanged(object sender, EventArgs e)
+        {
+            string textString = disText.Text;
+            textChange(ref textString, ref Coach.gkDistribution, 8);
+        }
+
+
+
+
+        private void handPlus_Click(object sender, EventArgs e)
+        {
+            addOrMinus(ref Coach.gkHandling, 0, 9);
+        }
+
+        private void handMinus_Click(object sender, EventArgs e)
+        {
+            addOrMinus(ref Coach.gkHandling, 1, 9);
+        }
+
+        private void handText_TextChanged(object sender, EventArgs e)
+        {
+            string textString = handText.Text;
+            textChange(ref textString, ref Coach.gkHandling, 9);
+        }
+
+
+
+
+        private void shotPlus_Click(object sender, EventArgs e)
+        {
+            addOrMinus(ref Coach.gkShotStopping, 0, 10);
+        }
+
+        private void shotMinus_Click(object sender, EventArgs e)
+        {
+            addOrMinus(ref Coach.gkShotStopping, 1, 10);
+        }
+
+        private void shotText_TextChanged(object sender, EventArgs e)
+        {
+            string textString = shotText.Text;
+            textChange(ref textString, ref Coach.gkShotStopping, 10);
+        }
+
+
+
+
+        private void detPlus_Click(object sender, EventArgs e)
+        {
+            addOrMinus(ref Coach.determination, 0, 11);
+        }
+
+        private void detMinus_Click(object sender, EventArgs e)
+        {
+            addOrMinus(ref Coach.determination, 1, 11);
+        }
+
+        private void detText_TextChanged(object sender, EventArgs e)
+        {
+            string textString = detText.Text;
+            textChange(ref textString, ref Coach.determination, 11);
+        }
+
+
+
+
+        private void levPlus_Click(object sender, EventArgs e)
+        {
+            addOrMinus(ref Coach.levelOfDisc, 0, 12);
+        }
+
+        private void levMinus_Click(object sender, EventArgs e)
+        {
+            addOrMinus(ref Coach.levelOfDisc, 1, 12);
+        }
+
+        private void levText_TextChanged(object sender, EventArgs e)
+        {
+            string textString = levText.Text;
+            textChange(ref textString, ref Coach.levelOfDisc, 12);
+        }
+
+
+
+
+        private void motPlus_Click(object sender, EventArgs e)
+        {
+            addOrMinus(ref Coach.motivating, 0, 13);
+        }
+
+        private void motMinus_Click(object sender, EventArgs e)
+        {
+            addOrMinus(ref Coach.motivating, 1, 13);
+        }
+
+        private void motText_TextChanged(object sender, EventArgs e)
+        {
+            string textString = motText.Text;
+            textChange(ref textString, ref Coach.motivating, 13);
+        }
     }
 }

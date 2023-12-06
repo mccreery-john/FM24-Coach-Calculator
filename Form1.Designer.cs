@@ -214,6 +214,7 @@
             techPlus.TabIndex = 18;
             techPlus.Text = "+";
             techPlus.UseVisualStyleBackColor = true;
+            techPlus.Click += techPlus_Click;
             // 
             // techMinus
             // 
@@ -223,6 +224,7 @@
             techMinus.TabIndex = 17;
             techMinus.Text = "-";
             techMinus.UseVisualStyleBackColor = true;
+            techMinus.Click += techMinus_Click;
             // 
             // label5
             // 
@@ -241,6 +243,7 @@
             tacPlus.TabIndex = 14;
             tacPlus.Text = "+";
             tacPlus.UseVisualStyleBackColor = true;
+            tacPlus.Click += tacPlus_Click;
             // 
             // tacMinus
             // 
@@ -250,6 +253,7 @@
             tacMinus.TabIndex = 13;
             tacMinus.Text = "-";
             tacMinus.UseVisualStyleBackColor = true;
+            tacMinus.Click += tacMinus_Click;
             // 
             // label6
             // 
@@ -268,6 +272,7 @@
             knowPlus.TabIndex = 26;
             knowPlus.Text = "+";
             knowPlus.UseVisualStyleBackColor = true;
+            knowPlus.Click += knowPlus_Click;
             // 
             // knowMinus
             // 
@@ -277,6 +282,7 @@
             knowMinus.TabIndex = 25;
             knowMinus.Text = "-";
             knowMinus.UseVisualStyleBackColor = true;
+            knowMinus.Click += knowMinus_Click;
             // 
             // label7
             // 
@@ -295,6 +301,7 @@
             setPlus.TabIndex = 22;
             setPlus.Text = "+";
             setPlus.UseVisualStyleBackColor = true;
+            setPlus.Click += setPlus_Click;
             // 
             // setMinus
             // 
@@ -304,6 +311,7 @@
             setMinus.TabIndex = 21;
             setMinus.Text = "-";
             setMinus.UseVisualStyleBackColor = true;
+            setMinus.Click += setMinus_Click;
             // 
             // label8
             // 
@@ -322,6 +330,7 @@
             shotPlus.TabIndex = 38;
             shotPlus.Text = "+";
             shotPlus.UseVisualStyleBackColor = true;
+            shotPlus.Click += shotPlus_Click;
             // 
             // shotMinus
             // 
@@ -331,6 +340,7 @@
             shotMinus.TabIndex = 37;
             shotMinus.Text = "-";
             shotMinus.UseVisualStyleBackColor = true;
+            shotMinus.Click += shotMinus_Click;
             // 
             // label9
             // 
@@ -349,6 +359,7 @@
             handPlus.TabIndex = 34;
             handPlus.Text = "+";
             handPlus.UseVisualStyleBackColor = true;
+            handPlus.Click += handPlus_Click;
             // 
             // handMinus
             // 
@@ -358,6 +369,7 @@
             handMinus.TabIndex = 33;
             handMinus.Text = "-";
             handMinus.UseVisualStyleBackColor = true;
+            handMinus.Click += handMinus_Click;
             // 
             // label10
             // 
@@ -376,6 +388,7 @@
             disPlus.TabIndex = 30;
             disPlus.Text = "+";
             disPlus.UseVisualStyleBackColor = true;
+            disPlus.Click += disPlus_Click;
             // 
             // disMinus
             // 
@@ -385,6 +398,7 @@
             disMinus.TabIndex = 29;
             disMinus.Text = "-";
             disMinus.UseVisualStyleBackColor = true;
+            disMinus.Click += disMinus_Click;
             // 
             // label11
             // 
@@ -403,6 +417,7 @@
             motPlus.TabIndex = 50;
             motPlus.Text = "+";
             motPlus.UseVisualStyleBackColor = true;
+            motPlus.Click += motPlus_Click;
             // 
             // motMinus
             // 
@@ -412,6 +427,7 @@
             motMinus.TabIndex = 49;
             motMinus.Text = "-";
             motMinus.UseVisualStyleBackColor = true;
+            motMinus.Click += motMinus_Click;
             // 
             // label12
             // 
@@ -430,6 +446,7 @@
             levPlus.TabIndex = 46;
             levPlus.Text = "+";
             levPlus.UseVisualStyleBackColor = true;
+            levPlus.Click += levPlus_Click;
             // 
             // levMinus
             // 
@@ -439,6 +456,7 @@
             levMinus.TabIndex = 45;
             levMinus.Text = "-";
             levMinus.UseVisualStyleBackColor = true;
+            levMinus.Click += levMinus_Click;
             // 
             // label13
             // 
@@ -457,6 +475,7 @@
             detPlus.TabIndex = 42;
             detPlus.Text = "+";
             detPlus.UseVisualStyleBackColor = true;
+            detPlus.Click += detPlus_Click;
             // 
             // detMinus
             // 
@@ -466,6 +485,7 @@
             detMinus.TabIndex = 41;
             detMinus.Text = "-";
             detMinus.UseVisualStyleBackColor = true;
+            detMinus.Click += detMinus_Click;
             // 
             // label19
             // 
@@ -565,6 +585,7 @@
             fitPlus.TabIndex = 69;
             fitPlus.Text = "+";
             fitPlus.UseVisualStyleBackColor = true;
+            fitPlus.Click += fitPlus_Click;
             // 
             // fitMinus
             // 
@@ -574,6 +595,7 @@
             fitMinus.TabIndex = 68;
             fitMinus.Text = "-";
             fitMinus.UseVisualStyleBackColor = true;
+            fitMinus.Click += fitMinus_Click;
             // 
             // label14
             // 
@@ -649,6 +671,7 @@
             tacText.TabIndex = 88;
             tacText.Text = "1";
             tacText.TextAlign = HorizontalAlignment.Center;
+            tacText.TextChanged += tacText_TextChanged;
             // 
             // techText
             // 
@@ -658,6 +681,7 @@
             techText.TabIndex = 89;
             techText.Text = "1";
             techText.TextAlign = HorizontalAlignment.Center;
+            techText.TextChanged += techText_TextChanged;
             // 
             // fitText
             // 
@@ -667,6 +691,7 @@
             fitText.TabIndex = 90;
             fitText.Text = "1";
             fitText.TextAlign = HorizontalAlignment.Center;
+            fitText.TextChanged += fitText_TextChanged;
             // 
             // setText
             // 
@@ -676,6 +701,7 @@
             setText.TabIndex = 91;
             setText.Text = "1";
             setText.TextAlign = HorizontalAlignment.Center;
+            setText.TextChanged += setText_TextChanged;
             // 
             // knowText
             // 
@@ -685,6 +711,7 @@
             knowText.TabIndex = 92;
             knowText.Text = "1";
             knowText.TextAlign = HorizontalAlignment.Center;
+            knowText.TextChanged += knowText_TextChanged;
             // 
             // disText
             // 
@@ -694,6 +721,7 @@
             disText.TabIndex = 93;
             disText.Text = "1";
             disText.TextAlign = HorizontalAlignment.Center;
+            disText.TextChanged += disText_TextChanged;
             // 
             // handText
             // 
@@ -703,6 +731,7 @@
             handText.TabIndex = 94;
             handText.Text = "1";
             handText.TextAlign = HorizontalAlignment.Center;
+            handText.TextChanged += handText_TextChanged;
             // 
             // shotText
             // 
@@ -712,6 +741,7 @@
             shotText.TabIndex = 95;
             shotText.Text = "1";
             shotText.TextAlign = HorizontalAlignment.Center;
+            shotText.TextChanged += shotText_TextChanged;
             // 
             // detText
             // 
@@ -721,6 +751,7 @@
             detText.TabIndex = 96;
             detText.Text = "1";
             detText.TextAlign = HorizontalAlignment.Center;
+            detText.TextChanged += detText_TextChanged;
             // 
             // levText
             // 
@@ -730,6 +761,7 @@
             levText.TabIndex = 97;
             levText.Text = "1";
             levText.TextAlign = HorizontalAlignment.Center;
+            levText.TextChanged += levText_TextChanged;
             // 
             // motText
             // 
@@ -739,6 +771,7 @@
             motText.TabIndex = 98;
             motText.Text = "1";
             motText.TextAlign = HorizontalAlignment.Center;
+            motText.TextChanged += motText_TextChanged;
             // 
             // label28
             // 
