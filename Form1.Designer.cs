@@ -67,7 +67,6 @@
             label13 = new Label();
             detPlus = new Button();
             detMinus = new Button();
-            attackTactical = new PictureBox();
             label19 = new Label();
             label20 = new Label();
             label21 = new Label();
@@ -84,15 +83,6 @@
             label15 = new Label();
             label18 = new Label();
             label27 = new Label();
-            attackTechnical = new PictureBox();
-            defendTactical = new PictureBox();
-            defendTechnical = new PictureBox();
-            possessionTactical = new PictureBox();
-            possessionTechnical = new PictureBox();
-            fitnessStars = new PictureBox();
-            setPieceStars = new PictureBox();
-            handlingStars = new PictureBox();
-            shotStoppingStars = new PictureBox();
             attText = new TextBox();
             defText = new TextBox();
             menText = new TextBox();
@@ -107,16 +97,17 @@
             detText = new TextBox();
             levText = new TextBox();
             motText = new TextBox();
-            ((System.ComponentModel.ISupportInitialize)attackTactical).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)attackTechnical).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)defendTactical).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)defendTechnical).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)possessionTactical).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)possessionTechnical).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)fitnessStars).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)setPieceStars).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)handlingStars).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)shotStoppingStars).BeginInit();
+            label28 = new Label();
+            label29 = new Label();
+            label30 = new Label();
+            label31 = new Label();
+            label32 = new Label();
+            label33 = new Label();
+            label34 = new Label();
+            label35 = new Label();
+            label36 = new Label();
+            label37 = new Label();
+            label38 = new Label();
             SuspendLayout();
             // 
             // attMinus
@@ -127,6 +118,7 @@
             attMinus.TabIndex = 1;
             attMinus.Text = "-";
             attMinus.UseVisualStyleBackColor = true;
+            attMinus.Click += attMinus_Click;
             // 
             // attPlus
             // 
@@ -164,6 +156,7 @@
             defPlus.TabIndex = 6;
             defPlus.Text = "+";
             defPlus.UseVisualStyleBackColor = true;
+            defPlus.Click += defPlus_Click;
             // 
             // defMinus
             // 
@@ -173,6 +166,7 @@
             defMinus.TabIndex = 5;
             defMinus.Text = "-";
             defMinus.UseVisualStyleBackColor = true;
+            defMinus.Click += defMinus_Click;
             // 
             // label3
             // 
@@ -471,14 +465,6 @@
             detMinus.Text = "-";
             detMinus.UseVisualStyleBackColor = true;
             // 
-            // attackTactical
-            // 
-            attackTactical.Location = new Point(592, 64);
-            attackTactical.Name = "attackTactical";
-            attackTactical.Size = new Size(107, 19);
-            attackTactical.TabIndex = 52;
-            attackTactical.TabStop = false;
-            // 
             // label19
             // 
             label19.AutoSize = true;
@@ -608,7 +594,7 @@
             // label18
             // 
             label18.AutoSize = true;
-            label18.Location = new Point(439, 446);
+            label18.Location = new Point(469, 477);
             label18.Name = "label18";
             label18.Size = new Size(82, 15);
             label18.TabIndex = 75;
@@ -617,83 +603,11 @@
             // label27
             // 
             label27.AutoSize = true;
-            label27.Location = new Point(439, 415);
+            label27.Location = new Point(469, 446);
             label27.Name = "label27";
             label27.Size = new Size(56, 15);
             label27.TabIndex = 74;
             label27.Text = "Handling";
-            // 
-            // attackTechnical
-            // 
-            attackTechnical.Location = new Point(592, 95);
-            attackTechnical.Name = "attackTechnical";
-            attackTechnical.Size = new Size(107, 19);
-            attackTechnical.TabIndex = 76;
-            attackTechnical.TabStop = false;
-            // 
-            // defendTactical
-            // 
-            defendTactical.Location = new Point(592, 170);
-            defendTactical.Name = "defendTactical";
-            defendTactical.Size = new Size(107, 19);
-            defendTactical.TabIndex = 77;
-            defendTactical.TabStop = false;
-            // 
-            // defendTechnical
-            // 
-            defendTechnical.Location = new Point(592, 202);
-            defendTechnical.Name = "defendTechnical";
-            defendTechnical.Size = new Size(107, 19);
-            defendTechnical.TabIndex = 78;
-            defendTechnical.TabStop = false;
-            // 
-            // possessionTactical
-            // 
-            possessionTactical.Location = new Point(592, 269);
-            possessionTactical.Name = "possessionTactical";
-            possessionTactical.Size = new Size(107, 19);
-            possessionTactical.TabIndex = 79;
-            possessionTactical.TabStop = false;
-            // 
-            // possessionTechnical
-            // 
-            possessionTechnical.Location = new Point(592, 304);
-            possessionTechnical.Name = "possessionTechnical";
-            possessionTechnical.Size = new Size(107, 19);
-            possessionTechnical.TabIndex = 80;
-            possessionTechnical.TabStop = false;
-            // 
-            // fitnessStars
-            // 
-            fitnessStars.Location = new Point(592, 349);
-            fitnessStars.Name = "fitnessStars";
-            fitnessStars.Size = new Size(107, 19);
-            fitnessStars.TabIndex = 81;
-            fitnessStars.TabStop = false;
-            // 
-            // setPieceStars
-            // 
-            setPieceStars.Location = new Point(592, 380);
-            setPieceStars.Name = "setPieceStars";
-            setPieceStars.Size = new Size(107, 19);
-            setPieceStars.TabIndex = 82;
-            setPieceStars.TabStop = false;
-            // 
-            // handlingStars
-            // 
-            handlingStars.Location = new Point(592, 415);
-            handlingStars.Name = "handlingStars";
-            handlingStars.Size = new Size(107, 19);
-            handlingStars.TabIndex = 83;
-            handlingStars.TabStop = false;
-            // 
-            // shotStoppingStars
-            // 
-            shotStoppingStars.Location = new Point(592, 446);
-            shotStoppingStars.Name = "shotStoppingStars";
-            shotStoppingStars.Size = new Size(107, 19);
-            shotStoppingStars.TabIndex = 84;
-            shotStoppingStars.TabStop = false;
             // 
             // attText
             // 
@@ -713,6 +627,7 @@
             defText.TabIndex = 86;
             defText.Text = "1";
             defText.TextAlign = HorizontalAlignment.Center;
+            defText.TextChanged += defText_TextChanged;
             // 
             // menText
             // 
@@ -822,12 +737,122 @@
             motText.Text = "1";
             motText.TextAlign = HorizontalAlignment.Center;
             // 
+            // label28
+            // 
+            label28.AutoSize = true;
+            label28.Location = new Point(439, 419);
+            label28.Name = "label28";
+            label28.Size = new Size(73, 15);
+            label28.TabIndex = 99;
+            label28.Text = "Goalkeeping";
+            // 
+            // label29
+            // 
+            label29.AutoSize = true;
+            label29.Location = new Point(647, 64);
+            label29.Name = "label29";
+            label29.Size = new Size(52, 15);
+            label29.TabIndex = 100;
+            label29.Text = ".5 Star(s)";
+            // 
+            // label30
+            // 
+            label30.AutoSize = true;
+            label30.Location = new Point(647, 95);
+            label30.Name = "label30";
+            label30.Size = new Size(52, 15);
+            label30.TabIndex = 101;
+            label30.Text = ".5 Star(s)";
+            // 
+            // label31
+            // 
+            label31.AutoSize = true;
+            label31.Location = new Point(647, 170);
+            label31.Name = "label31";
+            label31.Size = new Size(52, 15);
+            label31.TabIndex = 102;
+            label31.Text = ".5 Star(s)";
+            // 
+            // label32
+            // 
+            label32.AutoSize = true;
+            label32.Location = new Point(647, 201);
+            label32.Name = "label32";
+            label32.Size = new Size(52, 15);
+            label32.TabIndex = 103;
+            label32.Text = ".5 Star(s)";
+            // 
+            // label33
+            // 
+            label33.AutoSize = true;
+            label33.Location = new Point(647, 273);
+            label33.Name = "label33";
+            label33.Size = new Size(52, 15);
+            label33.TabIndex = 104;
+            label33.Text = ".5 Star(s)";
+            // 
+            // label34
+            // 
+            label34.AutoSize = true;
+            label34.Location = new Point(647, 304);
+            label34.Name = "label34";
+            label34.Size = new Size(52, 15);
+            label34.TabIndex = 105;
+            label34.Text = ".5 Star(s)";
+            // 
+            // label35
+            // 
+            label35.AutoSize = true;
+            label35.Location = new Point(647, 349);
+            label35.Name = "label35";
+            label35.Size = new Size(52, 15);
+            label35.TabIndex = 106;
+            label35.Text = ".5 Star(s)";
+            // 
+            // label36
+            // 
+            label36.AutoSize = true;
+            label36.Location = new Point(647, 380);
+            label36.Name = "label36";
+            label36.Size = new Size(52, 15);
+            label36.TabIndex = 107;
+            label36.Text = ".5 Star(s)";
+            // 
+            // label37
+            // 
+            label37.AutoSize = true;
+            label37.Location = new Point(647, 446);
+            label37.Name = "label37";
+            label37.Size = new Size(52, 15);
+            label37.TabIndex = 108;
+            label37.Text = ".5 Star(s)";
+            // 
+            // label38
+            // 
+            label38.AutoSize = true;
+            label38.Location = new Point(647, 477);
+            label38.Name = "label38";
+            label38.Size = new Size(52, 15);
+            label38.TabIndex = 109;
+            label38.Text = ".5 Star(s)";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
             ClientSize = new Size(764, 584);
+            Controls.Add(label38);
+            Controls.Add(label37);
+            Controls.Add(label36);
+            Controls.Add(label35);
+            Controls.Add(label34);
+            Controls.Add(label33);
+            Controls.Add(label32);
+            Controls.Add(label31);
+            Controls.Add(label30);
+            Controls.Add(label29);
+            Controls.Add(label28);
             Controls.Add(motText);
             Controls.Add(levText);
             Controls.Add(detText);
@@ -842,15 +867,6 @@
             Controls.Add(menText);
             Controls.Add(defText);
             Controls.Add(attText);
-            Controls.Add(shotStoppingStars);
-            Controls.Add(handlingStars);
-            Controls.Add(setPieceStars);
-            Controls.Add(fitnessStars);
-            Controls.Add(possessionTechnical);
-            Controls.Add(possessionTactical);
-            Controls.Add(defendTechnical);
-            Controls.Add(defendTactical);
-            Controls.Add(attackTechnical);
             Controls.Add(label18);
             Controls.Add(label27);
             Controls.Add(label14);
@@ -867,7 +883,6 @@
             Controls.Add(label21);
             Controls.Add(label22);
             Controls.Add(label23);
-            Controls.Add(attackTactical);
             Controls.Add(label11);
             Controls.Add(motPlus);
             Controls.Add(motMinus);
@@ -910,16 +925,6 @@
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
-            ((System.ComponentModel.ISupportInitialize)attackTactical).EndInit();
-            ((System.ComponentModel.ISupportInitialize)attackTechnical).EndInit();
-            ((System.ComponentModel.ISupportInitialize)defendTactical).EndInit();
-            ((System.ComponentModel.ISupportInitialize)defendTechnical).EndInit();
-            ((System.ComponentModel.ISupportInitialize)possessionTactical).EndInit();
-            ((System.ComponentModel.ISupportInitialize)possessionTechnical).EndInit();
-            ((System.ComponentModel.ISupportInitialize)fitnessStars).EndInit();
-            ((System.ComponentModel.ISupportInitialize)setPieceStars).EndInit();
-            ((System.ComponentModel.ISupportInitialize)handlingStars).EndInit();
-            ((System.ComponentModel.ISupportInitialize)shotStoppingStars).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -964,7 +969,6 @@
         private Label label13;
         private Button detPlus;
         private Button detMinus;
-        private PictureBox attackTactical;
         private Label label19;
         private Label label20;
         private Label label21;
@@ -981,15 +985,6 @@
         private Label label15;
         private Label label18;
         private Label label27;
-        private PictureBox attackTechnical;
-        private PictureBox defendTactical;
-        private PictureBox defendTechnical;
-        private PictureBox possessionTactical;
-        private PictureBox possessionTechnical;
-        private PictureBox fitnessStars;
-        private PictureBox setPieceStars;
-        private PictureBox handlingStars;
-        private PictureBox shotStoppingStars;
         private TextBox attText;
         private TextBox defText;
         private TextBox menText;
@@ -1004,5 +999,16 @@
         private TextBox detText;
         private TextBox levText;
         private TextBox motText;
+        private Label label28;
+        private Label label29;
+        private Label label30;
+        private Label label31;
+        private Label label32;
+        private Label label33;
+        private Label label34;
+        private Label label35;
+        private Label label36;
+        private Label label37;
+        private Label label38;
     }
 }

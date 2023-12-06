@@ -55,47 +55,9 @@ namespace FM24_Coach_Calculator
 
 
 
-
-
-        private void attPlus_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void attText_TextChanged(object sender, EventArgs e)
-        {
-            string newValue = attText.Text;
-            int attack = Coach.attacking;
-            try
-            {
-                attack = int.Parse(newValue);
-            }
-            catch (FormatException ex)
-            {
-                attText.Text = Coach.attacking.ToString();
-                return;
-            }
-
-            if (attack > 20)
-            {
-                attack = 20;
-            }
-            else if (attack < 1)
-            {
-                attack = 1;
-            }
-
-            attText.Text = attack.ToString();
-            Coach.attacking = attack;
-            changeRatings(0);
-        }
-
-
-
-
         private void changeRatings(int attributeChanged)
         {
-            if (attributeChanged == 0 || attributeChanged == 3 || attributeChanged == 11 || attributeChanged == 12 || attributeChanged == 13 ) //Attacking Tactical
+            if (attributeChanged == 0 || attributeChanged == 3 || attributeChanged == 11 || attributeChanged == 12 || attributeChanged == 13) //Attacking Tactical
             {
                 int sum = Coach.attacking + Coach.tactical + Coach.determination + Coach.levelOfDisc + Coach.motivating;
                 double average = sum / 5;
@@ -196,17 +158,86 @@ namespace FM24_Coach_Calculator
             {
                 return Convert.ToInt32(value);
             }
-            else
+            else //Always round down
             {
-                if (remainder <= 0.5)   //Round down
-                {
-                    return Convert.ToInt32(value);
-                }
-                else
-                {
-                    return Convert.ToInt32(value) + 1;
-                }
+                double roundDown = value - remainder;
+                return Convert.ToInt32(roundDown);
             }
         }
+
+
+        private int getNewValue(string newValue, int oldValue)
+        {
+            //string newValue = attText.Text;
+            //int attack = Coach.attacking;
+            int newValueInt;
+            try
+            {
+                newValueInt = int.Parse(newValue);
+            }
+            catch (FormatException ex)
+            {
+                //attText.Text = Coach.attacking.ToString();
+                return oldValue;
+            }
+
+            if (newValueInt > 20)
+            {
+                newValueInt = 20;
+            }
+            else if (newValueInt < 1)
+            {
+                newValueInt = 1;
+            }
+
+
+
+            return newValueInt;
+        }
+
+
+
+        private void attPlus_Click(object sender, EventArgs e)
+        {
+            int newVal = getNewValue((Coach.attacking + 1).ToString(), Coach.attacking);
+
+
+            if (newVal != Coach.attacking)
+            {
+                attText.Text = newVal.ToString();
+                Coach.attacking = newVal;
+                changeRatings(0);
+            }
+        }
+
+        private void attMinus_Click(object sender, EventArgs e)
+        {
+            int newVal = getNewValue((Coach.attacking - 1).ToString(), Coach.attacking);
+
+
+            if (newVal != Coach.attacking)
+            {
+                attText.Text = newVal.ToString();
+                Coach.attacking = newVal;
+                changeRatings(0);
+            }
+        }
+
+        private void attText_TextChanged(object sender, EventArgs e)
+        {
+            int newVal = getNewValue(attText.Text, Coach.attacking);
+
+
+            if (newVal != Coach.attacking)
+            {
+                attText.Text = newVal.ToString();
+                Coach.attacking = newVal;
+                changeRatings(0);
+            }
+        }
+
+
+
+       
     }
 }
