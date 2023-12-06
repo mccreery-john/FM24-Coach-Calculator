@@ -35,7 +35,7 @@
             defPlus = new Button();
             defMinus = new Button();
             label3 = new Label();
-            mentalPlus = new Button();
+            menPlus = new Button();
             menMinus = new Button();
             label4 = new Label();
             techPlus = new Button();
@@ -177,14 +177,15 @@
             label3.TabIndex = 11;
             label3.Text = "Mental";
             // 
-            // mentalPlus
+            // menPlus
             // 
-            mentalPlus.Location = new Point(266, 86);
-            mentalPlus.Name = "mentalPlus";
-            mentalPlus.Size = new Size(39, 23);
-            mentalPlus.TabIndex = 10;
-            mentalPlus.Text = "+";
-            mentalPlus.UseVisualStyleBackColor = true;
+            menPlus.Location = new Point(266, 86);
+            menPlus.Name = "menPlus";
+            menPlus.Size = new Size(39, 23);
+            menPlus.TabIndex = 10;
+            menPlus.Text = "+";
+            menPlus.UseVisualStyleBackColor = true;
+            menPlus.Click += menPlus_Click;
             // 
             // menMinus
             // 
@@ -194,6 +195,7 @@
             menMinus.TabIndex = 9;
             menMinus.Text = "-";
             menMinus.UseVisualStyleBackColor = true;
+            menMinus.Click += menMinus_Click;
             // 
             // label4
             // 
@@ -637,6 +639,7 @@
             menText.TabIndex = 87;
             menText.Text = "1";
             menText.TextAlign = HorizontalAlignment.Center;
+            menText.TextChanged += menText_TextChanged;
             // 
             // tacText
             // 
@@ -914,7 +917,7 @@
             Controls.Add(tacPlus);
             Controls.Add(tacMinus);
             Controls.Add(label3);
-            Controls.Add(mentalPlus);
+            Controls.Add(menPlus);
             Controls.Add(menMinus);
             Controls.Add(label2);
             Controls.Add(defPlus);
@@ -937,7 +940,7 @@
         private Button defPlus;
         private Button defMinus;
         private Label label3;
-        private Button mentalPlus;
+        private Button menPlus;
         private Button menMinus;
         private Label label4;
         private Button techPlus;

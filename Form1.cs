@@ -7,18 +7,12 @@ namespace FM24_Coach_Calculator
         public Form1()
         {
             InitializeComponent();
-            //Coach newCoach;
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //Coach newCoach;// = new Coach();
-
+            //Purposefully blank
         }
-
-
-
-
 
         static class Coach
         {
@@ -172,7 +166,45 @@ namespace FM24_Coach_Calculator
                 case 0:
                     attText.Text = Coach.attacking.ToString();
                     break;
-                //case 1:
+                case 1:
+                    defText.Text = Coach.defending.ToString();
+                    break;
+                case 2:
+                    menText.Text = Coach.mental.ToString();
+                    break;
+                case 3:
+                    tacText.Text = Coach.tactical.ToString();
+                    break;
+                case 4:
+                    techText.Text = Coach.technical.ToString();
+                    break;
+                case 5:
+                    fitText.Text = Coach.fitness.ToString();
+                    break;
+                case 6:
+                    setText.Text = Coach.setPieces.ToString();
+                    break;
+                case 7:
+                    knowText.Text = Coach.tactKnow.ToString();
+                    break;
+                case 8:
+                    disText.Text = Coach.gkDistribution.ToString();
+                    break;
+                case 9:
+                    handText.Text = Coach.gkHandling.ToString();
+                    break;
+                case 10:
+                    shotText.Text = Coach.gkShotStopping.ToString();
+                    break;
+                case 11:
+                    detText.Text = Coach.determination.ToString();
+                    break;
+                case 12:
+                    levText.Text = Coach.levelOfDisc.ToString();
+                    break;
+                case 13:
+                    motText.Text = Coach.motivating.ToString();
+                    break;
 
             }
         }
@@ -215,12 +247,13 @@ namespace FM24_Coach_Calculator
             if (addBit == 0)
             {
                 newValueInt = oldValue + 1;
-            }else
+            }
+            else
             {
                 newValueInt = oldValue - 1;
             }
 
-            if ( (newValueInt > 20) || newValueInt < 1)
+            if ((newValueInt > 20) || newValueInt < 1)
             {
                 return;
             }
@@ -231,16 +264,16 @@ namespace FM24_Coach_Calculator
         }
 
 
+
+
         private void attPlus_Click(object sender, EventArgs e)
         {
             addOrMinus(ref Coach.attacking, 0, 0);
-            
         }
 
         private void attMinus_Click(object sender, EventArgs e)
         {
             addOrMinus(ref Coach.attacking, 1, 0);
-            
         }
 
         private void attText_TextChanged(object sender, EventArgs e)
@@ -250,24 +283,54 @@ namespace FM24_Coach_Calculator
         }
 
 
+
+
         private void defPlus_Click(object sender, EventArgs e)
         {
-            addOrMinus(ref Coach.attacking, 0, 0);
-            attText.Text = Coach.attacking.ToString();
+            addOrMinus(ref Coach.defending, 0, 1);
         }
 
         private void defMinus_Click(object sender, EventArgs e)
         {
-            addOrMinus(ref Coach.attacking, 1, 0);
-            attText.Text = Coach.attacking.ToString();
+            addOrMinus(ref Coach.defending, 1, 1);
         }
 
         private void defText_TextChanged(object sender, EventArgs e)
         {
-            string textString = attText.Text;
-            textChange(ref textString, ref Coach.attacking, 0);
-            attText.Text = Coach.attacking.ToString();
+            string textString = defText.Text;
+            textChange(ref textString, ref Coach.defending, 1);
         }
+
+
+
+
+
+
+        private void menPlus_Click(object sender, EventArgs e)
+        {
+            addOrMinus(ref Coach.mental, 0, 2);
+        }
+
+        private void menMinus_Click(object sender, EventArgs e)
+        {
+            addOrMinus(ref Coach.mental, 1, 2);
+        }
+
+        private void menText_TextChanged(object sender, EventArgs e)
+        {
+            string textString = menText.Text;
+            textChange(ref textString, ref Coach.mental, 2);
+        }
+
+
+
+
+
+
+
+
+
+
 
     }
 }
