@@ -56,16 +56,14 @@ namespace FM24_Coach_Calculator
                 int sum = Coach.attacking + Coach.tactical + Coach.determination + Coach.levelOfDisc + Coach.motivating;
                 double average = sum / 5;
                 double stars = average / 2;
-                int intStars = rounding(stars);
-                Coach.attTact = intStars + 1;       //Everything has a minimum of 1 star (out of ten)
+                Coach.attTact = rounding(stars);
             }
             if (attributeChanged == 0 || attributeChanged == 4 || attributeChanged == 11 || attributeChanged == 12 || attributeChanged == 13) //Attacking Technical
             {
                 int sum = Coach.attacking + Coach.technical + Coach.determination + Coach.levelOfDisc + Coach.motivating;
                 double average = sum / 5;
                 double stars = average / 2;
-                int intStars = rounding(stars);
-                Coach.attTech = intStars + 1;       //Everything has a minimum of 1 star (out of ten)
+                Coach.attTech = rounding(stars);
             }
 
             if (attributeChanged == 1 || attributeChanged == 3 || attributeChanged == 11 || attributeChanged == 12 || attributeChanged == 13) //Defending Tactical
@@ -73,16 +71,14 @@ namespace FM24_Coach_Calculator
                 int sum = Coach.defending + Coach.tactical + Coach.determination + Coach.levelOfDisc + Coach.motivating;
                 double average = sum / 5;
                 double stars = average / 2;
-                int intStars = rounding(stars);
-                Coach.defTact = intStars + 1;       //Everything has a minimum of 1 star (out of ten)
+                Coach.defTact = rounding(stars);
             }
-            if (attributeChanged == 1 || attributeChanged == 4 || attributeChanged == 11 || attributeChanged == 12 || attributeChanged == 13) //Attacking Technical
+            if (attributeChanged == 1 || attributeChanged == 4 || attributeChanged == 11 || attributeChanged == 12 || attributeChanged == 13) //Defending Technical
             {
                 int sum = Coach.defending + Coach.technical + Coach.determination + Coach.levelOfDisc + Coach.motivating;
                 double average = sum / 5;
                 double stars = average / 2;
-                int intStars = rounding(stars);
-                Coach.defTech = intStars + 1;       //Everything has a minimum of 1 star (out of ten)
+                Coach.defTech = rounding(stars);
             }
 
             if (attributeChanged == 2 || attributeChanged == 3 || attributeChanged == 11 || attributeChanged == 12 || attributeChanged == 13) //Possesion Tactical
@@ -90,25 +86,22 @@ namespace FM24_Coach_Calculator
                 int sum = Coach.mental + Coach.tactical + Coach.determination + Coach.levelOfDisc + Coach.motivating;
                 double average = sum / 5;
                 double stars = average / 2;
-                int intStars = rounding(stars);
-                Coach.posTact = intStars + 1;       //Everything has a minimum of 1 star (out of ten)
+                Coach.posTact = rounding(stars);
             }
             if (attributeChanged == 2 || attributeChanged == 4 || attributeChanged == 11 || attributeChanged == 12 || attributeChanged == 13) //Possesion Technical
             {
                 int sum = Coach.mental + Coach.technical + Coach.determination + Coach.levelOfDisc + Coach.motivating;
                 double average = sum / 5;
                 double stars = average / 2;
-                int intStars = rounding(stars);
-                Coach.posTech = intStars + 1;       //Everything has a minimum of 1 star (out of ten)
+                Coach.posTech = rounding(stars);
             }
 
             if (attributeChanged == 5 || attributeChanged == 11 || attributeChanged == 12 || attributeChanged == 13) //Fitness
             {
-                int sum = Coach.mental + Coach.determination + Coach.levelOfDisc + Coach.motivating;
+                int sum = Coach.fitness + Coach.determination + Coach.levelOfDisc + Coach.motivating;
                 double average = sum / 4;
                 double stars = average / 2;
-                int intStars = rounding(stars);
-                Coach.fitnessRating = intStars + 1;       //Everything has a minimum of 1 star (out of ten)
+                Coach.fitnessRating = rounding(stars);
             }
 
             if (attributeChanged == 6 || attributeChanged == 7 || attributeChanged == 11 || attributeChanged == 12 || attributeChanged == 13) //Set Pieces
@@ -116,8 +109,7 @@ namespace FM24_Coach_Calculator
                 int sum = Coach.setPieces + Coach.tactKnow + Coach.determination + Coach.levelOfDisc + Coach.motivating;
                 double average = sum / 5;
                 double stars = average / 2;
-                int intStars = rounding(stars);
-                Coach.setPiecesRating = intStars + 1;       //Everything starts with 1 star (out of ten)
+                Coach.setPiecesRating = rounding(stars);
             }
 
             if (attributeChanged == 8 || attributeChanged == 9 || attributeChanged == 11 || attributeChanged == 12 || attributeChanged == 13) //GK Handling
@@ -125,22 +117,29 @@ namespace FM24_Coach_Calculator
                 int sum = Coach.gkDistribution + Coach.gkHandling + Coach.determination + Coach.levelOfDisc + Coach.motivating;
                 double average = sum / 5;
                 double stars = average / 2;
-                int intStars = rounding(stars);
-                Coach.gkHandlingRating = intStars + 1;       //Everything has a minimum of 1 star (out of ten)
+                Coach.gkHandlingRating = rounding(stars);
             }
             if (attributeChanged == 10 || attributeChanged == 11 || attributeChanged == 12 || attributeChanged == 13) //GK Shot Stopping
             {
-                int sum = Coach.gkShotRating + Coach.determination + Coach.levelOfDisc + Coach.motivating;
-                double average = sum / 5;
+                int sum = Coach.gkShotStopping + Coach.determination + Coach.levelOfDisc + Coach.motivating;
+                double average = sum / 4;
                 double stars = average / 2;
-                int intStars = rounding(stars);
-                Coach.gkShotRating = intStars + 1;       //Everything has a minimum of 1 star (out of ten)
+                Coach.gkShotRating = rounding(stars);
             }
 
 
 
-            //Change star images here ******
-
+            //Change stars here ******
+            labAttTac.Text = Coach.attTact.ToString();
+            labAttTech.Text = Coach.attTech.ToString();
+            labDefTac.Text = Coach.defTact.ToString();
+            labDefTech.Text = Coach.defTech.ToString();
+            labPosTac.Text = Coach.posTact.ToString();
+            labPosTech.Text = Coach.posTech.ToString();
+            labFit.Text = Coach.fitnessRating.ToString();
+            labSet.Text = Coach.setPiecesRating.ToString();
+            labGKHand.Text = Coach.gkHandlingRating.ToString();
+            labGKShot.Text = Coach.gkShotRating.ToString();
             //*******
         }
 
@@ -148,6 +147,10 @@ namespace FM24_Coach_Calculator
         private int rounding(double value)
         {
             double remainder = value % 1;
+            if (value < 1)
+            {
+                return 1;
+            }
             if (remainder == 0)
             {
                 return Convert.ToInt32(value);

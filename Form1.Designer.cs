@@ -98,16 +98,16 @@
             levText = new TextBox();
             motText = new TextBox();
             label28 = new Label();
-            label29 = new Label();
-            label30 = new Label();
-            label31 = new Label();
-            label32 = new Label();
-            label33 = new Label();
-            label34 = new Label();
-            label35 = new Label();
-            label36 = new Label();
-            label37 = new Label();
-            label38 = new Label();
+            labAttTac = new Label();
+            labAttTech = new Label();
+            labDefTac = new Label();
+            labDefTech = new Label();
+            labPosTac = new Label();
+            labPosTech = new Label();
+            labFit = new Label();
+            labSet = new Label();
+            labGKHand = new Label();
+            labGKShot = new Label();
             SuspendLayout();
             // 
             // attMinus
@@ -782,95 +782,95 @@
             label28.TabIndex = 99;
             label28.Text = "Goalkeeping";
             // 
-            // label29
+            // labAttTac
             // 
-            label29.AutoSize = true;
-            label29.Location = new Point(647, 64);
-            label29.Name = "label29";
-            label29.Size = new Size(52, 15);
-            label29.TabIndex = 100;
-            label29.Text = ".5 Star(s)";
+            labAttTac.AutoSize = true;
+            labAttTac.Location = new Point(647, 64);
+            labAttTac.Name = "labAttTac";
+            labAttTac.Size = new Size(13, 15);
+            labAttTac.TabIndex = 100;
+            labAttTac.Text = "1";
             // 
-            // label30
+            // labAttTech
             // 
-            label30.AutoSize = true;
-            label30.Location = new Point(647, 95);
-            label30.Name = "label30";
-            label30.Size = new Size(52, 15);
-            label30.TabIndex = 101;
-            label30.Text = ".5 Star(s)";
+            labAttTech.AutoSize = true;
+            labAttTech.Location = new Point(647, 95);
+            labAttTech.Name = "labAttTech";
+            labAttTech.Size = new Size(13, 15);
+            labAttTech.TabIndex = 101;
+            labAttTech.Text = "1";
             // 
-            // label31
+            // labDefTac
             // 
-            label31.AutoSize = true;
-            label31.Location = new Point(647, 170);
-            label31.Name = "label31";
-            label31.Size = new Size(52, 15);
-            label31.TabIndex = 102;
-            label31.Text = ".5 Star(s)";
+            labDefTac.AutoSize = true;
+            labDefTac.Location = new Point(647, 170);
+            labDefTac.Name = "labDefTac";
+            labDefTac.Size = new Size(13, 15);
+            labDefTac.TabIndex = 102;
+            labDefTac.Text = "1";
             // 
-            // label32
+            // labDefTech
             // 
-            label32.AutoSize = true;
-            label32.Location = new Point(647, 201);
-            label32.Name = "label32";
-            label32.Size = new Size(52, 15);
-            label32.TabIndex = 103;
-            label32.Text = ".5 Star(s)";
+            labDefTech.AutoSize = true;
+            labDefTech.Location = new Point(647, 201);
+            labDefTech.Name = "labDefTech";
+            labDefTech.Size = new Size(13, 15);
+            labDefTech.TabIndex = 103;
+            labDefTech.Text = "1";
             // 
-            // label33
+            // labPosTac
             // 
-            label33.AutoSize = true;
-            label33.Location = new Point(647, 273);
-            label33.Name = "label33";
-            label33.Size = new Size(52, 15);
-            label33.TabIndex = 104;
-            label33.Text = ".5 Star(s)";
+            labPosTac.AutoSize = true;
+            labPosTac.Location = new Point(647, 273);
+            labPosTac.Name = "labPosTac";
+            labPosTac.Size = new Size(13, 15);
+            labPosTac.TabIndex = 104;
+            labPosTac.Text = "1";
             // 
-            // label34
+            // labPosTech
             // 
-            label34.AutoSize = true;
-            label34.Location = new Point(647, 304);
-            label34.Name = "label34";
-            label34.Size = new Size(52, 15);
-            label34.TabIndex = 105;
-            label34.Text = ".5 Star(s)";
+            labPosTech.AutoSize = true;
+            labPosTech.Location = new Point(647, 304);
+            labPosTech.Name = "labPosTech";
+            labPosTech.Size = new Size(13, 15);
+            labPosTech.TabIndex = 105;
+            labPosTech.Text = "1";
             // 
-            // label35
+            // labFit
             // 
-            label35.AutoSize = true;
-            label35.Location = new Point(647, 349);
-            label35.Name = "label35";
-            label35.Size = new Size(52, 15);
-            label35.TabIndex = 106;
-            label35.Text = ".5 Star(s)";
+            labFit.AutoSize = true;
+            labFit.Location = new Point(647, 349);
+            labFit.Name = "labFit";
+            labFit.Size = new Size(13, 15);
+            labFit.TabIndex = 106;
+            labFit.Text = "1";
             // 
-            // label36
+            // labSet
             // 
-            label36.AutoSize = true;
-            label36.Location = new Point(647, 380);
-            label36.Name = "label36";
-            label36.Size = new Size(52, 15);
-            label36.TabIndex = 107;
-            label36.Text = ".5 Star(s)";
+            labSet.AutoSize = true;
+            labSet.Location = new Point(647, 380);
+            labSet.Name = "labSet";
+            labSet.Size = new Size(13, 15);
+            labSet.TabIndex = 107;
+            labSet.Text = "1";
             // 
-            // label37
+            // labGKHand
             // 
-            label37.AutoSize = true;
-            label37.Location = new Point(647, 446);
-            label37.Name = "label37";
-            label37.Size = new Size(52, 15);
-            label37.TabIndex = 108;
-            label37.Text = ".5 Star(s)";
+            labGKHand.AutoSize = true;
+            labGKHand.Location = new Point(647, 446);
+            labGKHand.Name = "labGKHand";
+            labGKHand.Size = new Size(13, 15);
+            labGKHand.TabIndex = 108;
+            labGKHand.Text = "1";
             // 
-            // label38
+            // labGKShot
             // 
-            label38.AutoSize = true;
-            label38.Location = new Point(647, 477);
-            label38.Name = "label38";
-            label38.Size = new Size(52, 15);
-            label38.TabIndex = 109;
-            label38.Text = ".5 Star(s)";
+            labGKShot.AutoSize = true;
+            labGKShot.Location = new Point(647, 477);
+            labGKShot.Name = "labGKShot";
+            labGKShot.Size = new Size(13, 15);
+            labGKShot.TabIndex = 109;
+            labGKShot.Text = "1";
             // 
             // Form1
             // 
@@ -878,16 +878,16 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
             ClientSize = new Size(764, 584);
-            Controls.Add(label38);
-            Controls.Add(label37);
-            Controls.Add(label36);
-            Controls.Add(label35);
-            Controls.Add(label34);
-            Controls.Add(label33);
-            Controls.Add(label32);
-            Controls.Add(label31);
-            Controls.Add(label30);
-            Controls.Add(label29);
+            Controls.Add(labGKShot);
+            Controls.Add(labGKHand);
+            Controls.Add(labSet);
+            Controls.Add(labFit);
+            Controls.Add(labPosTech);
+            Controls.Add(labPosTac);
+            Controls.Add(labDefTech);
+            Controls.Add(labDefTac);
+            Controls.Add(labAttTech);
+            Controls.Add(labAttTac);
             Controls.Add(label28);
             Controls.Add(motText);
             Controls.Add(levText);
@@ -959,7 +959,7 @@
             Controls.Add(attPlus);
             Controls.Add(attMinus);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Coaching Calculator";
             Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
@@ -1036,15 +1036,15 @@
         private TextBox levText;
         private TextBox motText;
         private Label label28;
-        private Label label29;
-        private Label label30;
-        private Label label31;
-        private Label label32;
-        private Label label33;
-        private Label label34;
-        private Label label35;
-        private Label label36;
-        private Label label37;
-        private Label label38;
+        private Label labAttTac;
+        private Label labAttTech;
+        private Label labDefTac;
+        private Label labDefTech;
+        private Label labPosTac;
+        private Label labPosTech;
+        private Label labFit;
+        private Label labSet;
+        private Label labGKHand;
+        private Label labGKShot;
     }
 }
