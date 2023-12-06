@@ -165,11 +165,21 @@ namespace FM24_Coach_Calculator
             }
         }
 
-
-        private int getNewValue(string newValue, int oldValue)
+        private void changeText(int attributeID)
         {
-            //string newValue = attText.Text;
-            //int attack = Coach.attacking;
+            switch (attributeID)
+            {
+                case 0:
+                    attText.Text = Coach.attacking.ToString();
+                    break;
+                //case 1:
+
+            }
+        }
+
+
+        private void textChange(ref string newValue, ref int oldValue, int attributeID)
+        {
             int newValueInt;
             try
             {
@@ -177,8 +187,8 @@ namespace FM24_Coach_Calculator
             }
             catch (FormatException ex)
             {
-                //attText.Text = Coach.attacking.ToString();
-                return oldValue;
+                changeText(attributeID);
+                return;
             }
 
             if (newValueInt > 20)
@@ -191,53 +201,73 @@ namespace FM24_Coach_Calculator
             }
 
 
-
-            return newValueInt;
+            oldValue = newValueInt;
+            changeText(attributeID);
+            changeRatings(attributeID);
+            return;
         }
 
+
+
+        private void addOrMinus(ref int oldValue, int addBit, int attributeID)
+        {
+            int newValueInt;
+            if (addBit == 0)
+            {
+                newValueInt = oldValue + 1;
+            }else
+            {
+                newValueInt = oldValue - 1;
+            }
+
+            if ( (newValueInt > 20) || newValueInt < 1)
+            {
+                return;
+            }
+            oldValue = newValueInt;
+            changeText(attributeID);
+            changeRatings(attributeID);
+            return;
+        }
 
 
         private void attPlus_Click(object sender, EventArgs e)
         {
-            int newVal = getNewValue((Coach.attacking + 1).ToString(), Coach.attacking);
-
-
-            if (newVal != Coach.attacking)
-            {
-                attText.Text = newVal.ToString();
-                Coach.attacking = newVal;
-                changeRatings(0);
-            }
+            addOrMinus(ref Coach.attacking, 0, 0);
+            
         }
 
         private void attMinus_Click(object sender, EventArgs e)
         {
-            int newVal = getNewValue((Coach.attacking - 1).ToString(), Coach.attacking);
-
-
-            if (newVal != Coach.attacking)
-            {
-                attText.Text = newVal.ToString();
-                Coach.attacking = newVal;
-                changeRatings(0);
-            }
+            addOrMinus(ref Coach.attacking, 1, 0);
+            
         }
 
         private void attText_TextChanged(object sender, EventArgs e)
         {
-            int newVal = getNewValue(attText.Text, Coach.attacking);
-
-
-            if (newVal != Coach.attacking)
-            {
-                attText.Text = newVal.ToString();
-                Coach.attacking = newVal;
-                changeRatings(0);
-            }
+            string textString = attText.Text;
+            textChange(ref textString, ref Coach.attacking, 0);
         }
 
 
+        private void defPlus_Click(object sender, EventArgs e)
+        {
+            addOrMinus(ref Coach.attacking, 0, 0);
+            attText.Text = Coach.attacking.ToString();
+        }
 
-       
+        private void defMinus_Click(object sender, EventArgs e)
+        {
+            addOrMinus(ref Coach.attacking, 1, 0);
+            attText.Text = Coach.attacking.ToString();
+        }
+
+        private void defText_TextChanged(object sender, EventArgs e)
+        {
+            string textString = attText.Text;
+            textChange(ref textString, ref Coach.attacking, 0);
+            attText.Text = Coach.attacking.ToString();
+        }
+
     }
 }
