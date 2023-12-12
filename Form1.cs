@@ -213,7 +213,7 @@ namespace FM24_Coach_Calculator
         }
 
 
-        private void textChange(ref string newValue, ref int oldValue, int attributeID)
+        private void textChange( string newValue, ref int oldValue, int attributeID)
         {
             int newValueInt;
             try
@@ -282,7 +282,7 @@ namespace FM24_Coach_Calculator
         private void attText_TextChanged(object sender, EventArgs e)
         {
             string textString = attText.Text;
-            textChange(ref textString, ref Coach.attacking, 0);
+            textChange( textString, ref Coach.attacking, 0);
         }
 
 
@@ -301,7 +301,7 @@ namespace FM24_Coach_Calculator
         private void defText_TextChanged(object sender, EventArgs e)
         {
             string textString = defText.Text;
-            textChange(ref textString, ref Coach.defending, 1);
+            textChange(textString, ref Coach.defending, 1);
         }
 
 
@@ -322,7 +322,7 @@ namespace FM24_Coach_Calculator
         private void menText_TextChanged(object sender, EventArgs e)
         {
             string textString = menText.Text;
-            textChange(ref textString, ref Coach.mental, 2);
+            textChange(textString, ref Coach.mental, 2);
         }
 
 
@@ -342,7 +342,7 @@ namespace FM24_Coach_Calculator
         private void tacText_TextChanged(object sender, EventArgs e)
         {
             string textString = tacText.Text;
-            textChange(ref textString, ref Coach.tactical, 3);
+            textChange(textString, ref Coach.tactical, 3);
         }
 
 
@@ -361,7 +361,7 @@ namespace FM24_Coach_Calculator
         private void techText_TextChanged(object sender, EventArgs e)
         {
             string textString = techText.Text;
-            textChange(ref textString, ref Coach.technical, 4);
+            textChange(textString, ref Coach.technical, 4);
         }
 
 
@@ -380,7 +380,7 @@ namespace FM24_Coach_Calculator
         private void fitText_TextChanged(object sender, EventArgs e)
         {
             string textString = fitText.Text;
-            textChange(ref textString, ref Coach.fitness, 5);
+            textChange(textString, ref Coach.fitness, 5);
         }
 
 
@@ -399,7 +399,7 @@ namespace FM24_Coach_Calculator
         private void setText_TextChanged(object sender, EventArgs e)
         {
             string textString = setText.Text;
-            textChange(ref textString, ref Coach.setPieces, 6);
+            textChange(textString, ref Coach.setPieces, 6);
         }
 
 
@@ -418,7 +418,7 @@ namespace FM24_Coach_Calculator
         private void knowText_TextChanged(object sender, EventArgs e)
         {
             string textString = knowText.Text;
-            textChange(ref textString, ref Coach.tactKnow, 7);
+            textChange(textString, ref Coach.tactKnow, 7);
         }
 
 
@@ -437,7 +437,7 @@ namespace FM24_Coach_Calculator
         private void disText_TextChanged(object sender, EventArgs e)
         {
             string textString = disText.Text;
-            textChange(ref textString, ref Coach.gkDistribution, 8);
+            textChange(textString, ref Coach.gkDistribution, 8);
         }
 
 
@@ -456,7 +456,7 @@ namespace FM24_Coach_Calculator
         private void handText_TextChanged(object sender, EventArgs e)
         {
             string textString = handText.Text;
-            textChange(ref textString, ref Coach.gkHandling, 9);
+            textChange(textString, ref Coach.gkHandling, 9);
         }
 
 
@@ -475,7 +475,7 @@ namespace FM24_Coach_Calculator
         private void shotText_TextChanged(object sender, EventArgs e)
         {
             string textString = shotText.Text;
-            textChange(ref textString, ref Coach.gkShotStopping, 10);
+            textChange(textString, ref Coach.gkShotStopping, 10);
         }
 
 
@@ -494,7 +494,7 @@ namespace FM24_Coach_Calculator
         private void detText_TextChanged(object sender, EventArgs e)
         {
             string textString = detText.Text;
-            textChange(ref textString, ref Coach.determination, 11);
+            textChange(textString, ref Coach.determination, 11);
         }
 
 
@@ -513,7 +513,7 @@ namespace FM24_Coach_Calculator
         private void levText_TextChanged(object sender, EventArgs e)
         {
             string textString = levText.Text;
-            textChange(ref textString, ref Coach.levelOfDisc, 12);
+            textChange(textString, ref Coach.levelOfDisc, 12);
         }
 
 
@@ -532,7 +532,7 @@ namespace FM24_Coach_Calculator
         private void motText_TextChanged(object sender, EventArgs e)
         {
             string textString = motText.Text;
-            textChange(ref textString, ref Coach.motivating, 13);
+            textChange(textString, ref Coach.motivating, 13);
         }
     }
 }
